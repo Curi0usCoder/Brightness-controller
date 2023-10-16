@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent_500"
+    app:cardCornerRadius="25dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/close_btn_image"
+            />
+
+        <SeekBar
+            android:id="@+id/float_seek"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="255"/>
+
+        <ImageView
+            android:id="@+id/app_icon_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/brightness"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
